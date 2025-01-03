@@ -29,10 +29,14 @@ testGetLineMul = TestList [
     "Three digits" ~: getLineMul "mul(100,200)" ~?= 20000
   ]
 
+testFilterDoParts :: Test
+testFilterDoParts = TestList []
+
 tests :: Test
 tests = TestList [
     TestLabel "Test GetMuls" testGetMuls,
-    TestLabel "Test GetLineMul" testGetLineMul
+    TestLabel "Test GetLineMul" testGetLineMul,
+    TestLabel "Test FilterDoParts" testFilterDoParts
   ]
 
 main :: IO ()
