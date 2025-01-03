@@ -55,7 +55,3 @@ This time, the sum of the results is 48 (2*4 + 8*5).
 Handle the new instructions; what do you get if you add up all of the results of just the enabled multiplications?
 
 Answer:
-
-Although it hasn't changed, you can still get your puzzle input.
-
-You can also [Shareon Bluesky Twitter Mastodon] this puzzle.

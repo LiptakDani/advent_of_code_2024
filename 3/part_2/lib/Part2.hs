@@ -2,6 +2,7 @@ module Part1 where
     
 import Text.Regex.TDFA
 import Text.Read (readMaybe)
+import Text.XHtml (content)
 
 getMuls :: String -> [String]
 getMuls content = getAllTextMatches (content =~ mulRegex :: AllTextMatches [] String)
@@ -14,3 +15,6 @@ getLineMul line = case (readMaybe a, readMaybe b) of
   where
     a = takeWhile (/= ',') $ drop 4 line
     b = takeWhile (/= ')') $ drop 1 $ dropWhile (/= ',') line
+
+filterDoParts :: String -> String
+filterDoParts content = content
